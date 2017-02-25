@@ -10,15 +10,14 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: App marketing template for Jekyll.
+description: Main contact page for Eric Nguyen
 author:
   name:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Frisco Template
+  name: Eric Made That
   links:
-    - https://github.com/CloudCannon/frisco-jekyll-template
 
 # -----
 # Build
