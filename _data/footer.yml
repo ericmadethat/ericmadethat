@@ -6,22 +6,22 @@ left_links:
   - name: Contact
     link: /contact/
 right_links:
-  - name:
-    link: https://facebook.com/
-    new_window: true
-    social_icon: Facebook
-  - name:
-    link: https://twitter.com/
+  # - name:
+  #   link: https://facebook.com/
+  #   new_window: true
+  #   social_icon: Facebook
+  - name: 'Eric Made That'
+    link: https://twitter.com/ericmadethat
     social_icon: Twitter
     new_window: true
-  - name:
-    link: https://youtube.com/
-    social_icon: YouTube
-    new_window: true
-  - name:
-    link: https://plus.google.com/
-    social_icon: Google Plus
-    new_window: true
-  - name:
-    link: /feed.xml
-    social_icon: RSS
+  # - name:
+  #   link: https://youtube.com/
+  #   social_icon: YouTube
+  #   new_window: true
+  # - name:
+  #   link: https://plus.google.com/
+  #   social_icon: Google Plus
+  #   new_window: true
+  # - name:
+  #   link: /feed.xml
+  #   social_icon: RSS
