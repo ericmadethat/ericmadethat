@@ -21,11 +21,11 @@
 
 	changeHeader();
 
-	document.getElementById("open-nav").addEventListener("click", function (event) {
-		event.preventDefault();
-		document.body.classList.toggle("nav-open");
-		changeHeader();
-	});
+	// document.getElementById("open-nav").addEventListener("click", function (event) {
+	// 	event.preventDefault();
+	// 	document.body.classList.toggle("nav-open");
+	// 	changeHeader();
+	// });
 
 	$("a[href*=\\#]").on("click", function (event) {
 		event.preventDefault();
