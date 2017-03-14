@@ -3,19 +3,6 @@
 	text-align: center;
 	height: 100vh;
 	min-height: 550px;
-	// background-color: #333;
-	// background-repeat: no-repeat;
-	// background-size: cover;
-	// background-position: center center;
-
-	&:before {
-		// content: "";
-		// // background: linear-gradient(to bottom,rgba(0,0,0,.65) 0,rgba(0, 0, 0, 0) 100%);
-		// position: absolute;
-		// top: 0;
-		// left: 0;
-		// right: 0;
-		// height: 300px;
 }
 	.inner-hero {
 		display: flex;
@@ -26,8 +13,17 @@
 
 	.hero-text-container {
 		width: 600px;
-		text-align: left;
+		text-align: center;
 		margin: 0 auto;
+		position: relative;
+		top: -3rem;
+		.subtext {
+			font-family: 'Helvetica', 'Arial', sans-serif;
+			font-weight: bold;
+			font-size: 31px;
+			line-height: 1.2em;
+			margin-top: 40px;
+		}
 
 		.hero-logo {
 			width: 13rem;
@@ -40,7 +36,6 @@
 		position: absolute;
 		right: 0;
 	}
-}
 
 .image {
 	text-align: center;
