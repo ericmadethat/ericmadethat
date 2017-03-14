@@ -3,36 +3,139 @@ title: 'Eric Nguyen'
 description: Main contact page for Eric Nguyen
 image: https://source.unsplash.com/qVotvbsuM_c/2000x1322?a=.png
 bottom_image: https://source.unsplash.com/S_VbdMTsdiA/2000x1322?a=.png
+custom_js: index
+custom_css : index
+include_rellax: true
 ---
 
-<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+<section class="hero">
+		<!--  Floating elements-->
+		<!-- Brackets -->
+		<img class='brackets-el el-1' src="images/brackets.svg"></img>
+		<img class='brackets-el el-2 rellax' data-rellax-speed="-3" src="images/brackets_right.svg"></img>
+		<img class='brackets-el el-3 rellax' data-rellax-speed="2" src="images/brackets_left.svg"></img>
+		<img class='brackets-el el-4 big-one rellax' data-rellax-speed="8" src="images/brackets.svg"></img>
+		
+		<!-- Ampersands -->
+		<img class='ampersand-el el-1'  src="images/ampersand_left.svg"></img>
+		<img class='ampersand-el el-2' src="images/ampersand_left.svg"></img>
+		<img class='ampersand-el el-3' src="images/ampersand_left.svg"></img>
+		<img class='ampersand-el el-4'  src="images/ampersand_left.svg"></img>
+		<img class='ampersand-el el-6-right rellax' data-rellax-speed="3" src="images/ampersand_right.svg"></img>
+		
+
+		<!-- Hexagons -->
+		<img class='hexagon el-1 rellax' data-rellax-speed="5" src="images/hexagon.svg"></img>
+		<img class='hexagon el-2 rellax' data-rellax-speed="-4" src="images/hexagon.svg"></img>
+		<img class='hexagon el-3 rellax small-hex' data-rellax-speed="6" src="images/hexagon.svg"></img>
+		<img class='hexagon el-4 rellax' src="images/hexagon.svg"></img>
+		<img class='hexagon el-5 rellax' data-rellax-speed="-5" src="images/hexagon.svg"></img>
+
+		<img class='half-circle el-2 rellax' data-rellax-speed="-2" src="images/half_circle.svg"></img>
+
+		<!-- Music Notes -->
+		<img class='music-note-el el-1 rellax' data-rellax-speed="-2" src="images/music_note_line.svg"></img>
+		<img class='music-note-el el-2 rellax' data-rellax-speed="5" src="images/music_note_line.svg"></img>
+		<img class='music-note-el el-3 rellax' data-rellax-speed="9" src="images/music_note_line_right.svg"></img>
+
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<h1 class="editable">Eric Made That</h1>
-			<p class="subtext editable">Eric Nguyen, here. I develop sites and compose music.</p>
-			<div class="cta button alt"><a href="#contact">Contact</a></div>
+
+			<div class="hero-logo-wrap" data-tilt>
+				<img class="hero-logo-frame" src="images/logo/ericmadethat_logo_frame.png" alt="Eric Made That"></img>
+				<img class="hero-logo-inner" src="images/logo/ericmadethat_logo_inner.png" alt="Eric Made That"></img>
+			</div>
+			<p class="subtext">Hi, I’m Eric Nguyen.</br>And I really love making things.</p>
 		</div>
 	</div>
-	<div class="learn-more"><a href="#contact">Contact <span class="arrow">&#x25BC;</span></a></div>
 </section>
 
+	<div class="section-break rellax" data-rellax-speed="2">
+		<h1>What I do</h1>
+	</div>
 <div class="content">
-	<section class="pad" id="contact">
-		<div class="text-container contact-box">
-			<form action="https://formspree.io/eric@ericmadethat.com" method="post" class="contact-form">
-				<input type="text" name="_gotcha" style="display: none;">
+	<!-- Design and Code Section -->
+	<section class="info" id="developer">
+		<img class='triangle-section' src='images/triangle_yellow.svg'></img>
+		<img class='hexagon dc-1 rellax' data-rellax-speed="5" src="images/hexagon_blue.svg"></img>
+		<img class='hexagon dc-2 rellax' data-rellax-speed="7" src="images/hexagon_blue.svg"></img>
+		<img class='brackets-el dc-1 rellax' data-rellax-speed="2" src="images/brackets_blue.svg"></img>
 
-				<label for="name">Name</label>
-				<input type="text" name="name" id="name" placeholder="Enter your name...">
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Design & Code</h2>
+				<p class="editable">Let me help you take a core idea and transform it into something beautiful and tangible.</p>
+			</div>
+			<div class="image coding-wrap">
+				<div class="image-coding-tilt" data-tilt>
+					<img class="editable terminal-frame" src="images/terminal_bg.jpg" alt="Design & Code" />
+					<img class="terminal" src="images/terminal_inner.png" alt="Design & Code" />
+				</div>
+			</div>
+		</div>
+	</section>
 
-				<label for="email">Email Address</label>
-				<input type="email" name="email" id="email" placeholder="Enter your email..." required>
 
-				<label for="message">Message</label>
-				<textarea name="message" id="message" placeholder="Enter your message..."></textarea>
+	<!-- Copywrite & Blog -->
+	<section class="info" id="blog">
+		<img class='ampersand-el dc-1 rellax' data-rellax-speed="1" src="images/ampersand_right.svg"></img>
+		<img class='ampersand-el dc-2 rellax' data-rellax-speed="2" src="images/ampersand_left.svg"></img>
+		<img class='ampersand-el dc-3 rellax' data-rellax-speed="2" src="images/ampersand_right.svg"></img>
 
-				<input type="submit" value="Send Message">
-			</form>
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Copywrite & Blog</h2>
+				<p class="editable">Need content for your site? Check out my blog to get a taste of my writing style. I can also create Wikipedia articles for companies to help them establish their brand.</p>
+			</div>
+			<div class="image">
+				<img class="editable" src="images/copywriting_poster.jpg" alt="Copywriting" />
+				<img class='ampersand-el dc-4 rellax' data-rellax-speed="1" src="images/ampersand_left.svg"></img>
+				<img class='ampersand-el dc-5 rellax' data-rellax-speed="1" src="images/ampersand_right.svg"></img>
+			</div>
+		</div>
+	</section>
+	<!-- Music -->
+	<section class="info" id="music">
+		<img class='hexagon dc-3 rellax' data-rellax-speed="2" src="images/hexagon_blue.svg"></img>
+		<img class='music-note-el music-1 rellax' data-rellax-speed="1" src="images/music_note_line.svg"></img>
+		<img class='music-note-el music-2 rellax' data-rellax-speed="1" src="images/music_note_line_teal.svg"></img>
+		<img class='music-note-el music-3 rellax' data-rellax-speed="1" src="images/music_note_line_yellow.svg"></img>
+		<!-- <img class='hexagon music-1 rellax' data-rellax-speed="-1" src="images/hexagon_yellow.svg"></img> -->
+		<div class="container flex">
+			<div class="text">
+				<h2 class="editable">Music</h2>
+				<p class="editable">I compose, perform, and produce music under the name Eric En. Reach out if you’d like to collaborate, or need some custom tracks for podcasts or film.</p>
+				<iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/47014598&amp;color=F8E81C&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<!-- Contact Form -->
+	<section class="info no-reverse" id="contact">
+		<div class="container flex">
+			<div class="text">
+				<h2>Contact</h2>
+				<form action="https://formspree.io/eric@ericmadethat.com" method="post" class="contact-form">
+					<input type="text" name="_gotcha" style="display: none;">
+
+					<label for="name">Your Name</label>
+					<input type="text" name="name" id="name" >
+
+					<label for="email">Your Email</label>
+					<input type="email" name="email" id="email" required>
+
+					<label for="message">Your Message</label>
+					<textarea name="message" id="message"></textarea>
+
+					<input type="submit" value="Send Message">
+				</form>
+			</div>
+			<div class="image">
+				<img class="editable" src="images/messenger_pigeon.svg" alt="Contact me" />
+			</div>
 		</div>
 	</section>
 </div>

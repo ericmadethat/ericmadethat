@@ -6,11 +6,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 
-		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300|Rubik:300">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css">
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+		
+		{% if page.custom_css %}
+  		{% for stylesheet in page.custom_css %}
+  			<link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  		{% endfor %}
+		{% endif %}
 
 		{% seo %}
 		{% feed_meta %}
@@ -30,16 +36,15 @@
 
 	<body>
 		<header id="mainHeader">
-			<!-- <div class="container">
+			<div class="container">
 				<div class="company-name">
-					<a href="{{ site.baseurl }}/">
-						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/dark.svg" alt="dark frisco logo"></span>
-						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/light.svg" alt="light frisco logo"></span>
+					<a class="nav-logo" href="{{ site.baseurl }}/">
+						<span class="dark-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/dark.svg" alt="Eric Made That logo"></span>
+						<span class="light-logo"><img width="104" height="38" src="{{ site.baseurl }}/images/logo/light.svg" alt="Eric Made That logo"></span>
 					</a>
 				</div>
 				{% include navigation.html %}
-				<p class="editor-link"><a style="display:inline;" href="cloudcannon:collections/_data/navigation.yml" class="btn"><strong>&#9998;</strong> Edit navigation</a></p>
-			</div> -->
+			</div>
 		</header>
 
 		{{ content }}
@@ -69,10 +74,27 @@
 				<p class="copyright">
 					All rights reserved. Eric Nguyen 2017
 				</p>
+
 			</div>
 		</footer>
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="{{ site.baseurl }}/js/main.js"></script>
+		<script src="{{ site.baseurl }}/js/scrollreveal.min.js"></script>
+		<script src="{{ site.baseurl }}/js/tilt.jquery.min.js"></script>
+		
+		{% if page.custom_js %}
+		{% for custom_js in page.custom_js %}
+		<script src="{{ site.baseurl }}/js/{{ custom_js }}.js"></script>
+		{% endfor %}
+		{% endif %}
+
+		{% if page.include_rellax %}
+		<script src="{{ site.baseurl }}/js/rellax.min.js"> </script>
+		<script>
+			var rellax = new Rellax('.rellax')
+		</script>
+		{% endif %}
+
 	</body>
 </html>
