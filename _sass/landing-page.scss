@@ -17,23 +17,22 @@
 		// right: 0;
 		// height: 300px;
 }
-
-	p {
-		color: #fff;
-	}
-
 	.inner-hero {
 		display: flex;
 		align-items: center;
 		height: 100%;
+		color: #C3C3C3;
 	}
 
 	.hero-text-container {
 		width: 600px;
 		text-align: left;
+		margin: 0 auto;
 
-		h1, h2, p, .button {
-			text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+		.hero-logo {
+			width: 13rem;
+			margin: 0 auto;
+			display: block;
 		}
 	}
 
