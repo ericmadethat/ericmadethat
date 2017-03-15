@@ -30,6 +30,9 @@ header {
 	width: 100%;
 	z-index: 9999;
 	line-height: 0;
+  color: $blue;
+  transition: background-color 0.2s ease;
+  text-shadow: none;
 
 	.container {
 		line-height: 0;

@@ -32,14 +32,23 @@ nav {
 
 	a {
 		margin: 0 3px;
-		padding: 14px 10px;
+		padding: 4px 10px;
 		border: 0;
 		display: none;
+		font-weight: 600;
+		position: relative;
+		&:hover {
+			color: white;
+			background-color: #3e97ff;
+			border-radius: 5px; }
+		&:active {
+			top: 2px;
+		}
 
 		@media #{$mid-point} {
 			display: inline;
 			border-bottom: 1px solid rgba(255,255,255,0);
-			color: rgba(255,255,255,.8);
+			color: $blue;
 		}
 
 
