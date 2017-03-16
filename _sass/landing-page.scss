@@ -66,3 +66,23 @@
 		flex-direction: row-reverse;
 	}
 }
+
+section {
+	h2 {
+		font-family: 'Helvetica', 'Arial', sans-serif;
+		font-weight: 600;
+		margin-bottom: 15px;
+		line-height: 1;
+	}
+	&#developer {
+		h2 { color: $turquoise; }
+	}
+	&#blog {
+		h2 { color: $blue; }
+	}
+	&#music {
+		h2 { color: $red; }
+	}
+}
+
+

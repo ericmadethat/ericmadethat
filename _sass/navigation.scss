@@ -5,7 +5,7 @@
 	.nav-items a {
 		padding: 30px 0;
 		display: block;
-		&:hover {
+		&:hover:not(.nav-logo) {
 			color: $blue;
 			background: transparent;
 		}
@@ -37,7 +37,7 @@ nav {
 		position: relative;
 		display: inline;
 		a {
-			&:hover {
+			&:hover:not(.nav-logo) {
 				color: white;
 				background-color: #3e97ff;
 				border-radius: 5px; }
