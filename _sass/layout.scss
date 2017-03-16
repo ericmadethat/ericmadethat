@@ -33,6 +33,7 @@ header {
   color: $blue;
   transition: background-color 0.2s ease;
   text-shadow: none;
+  
 
 	.container {
 		line-height: 0;
@@ -46,15 +47,17 @@ header {
 		text-shadow: none;
 
 		a {
-			color: #333;
+			color: $blue;
 			@media #{$mid-point} {
 				&:hover {
-					border-bottom-color: rgba(80, 80, 80,.3);
-					border-bottom-width: 5px;
+					color: white;
+					background-color: #3e97ff;
+					border-radius: 5px; }
+				&:active {
+					top: 2px;
 				}
 			}
 		}
-
 		.dark-logo {
 			display: inline;
 		}

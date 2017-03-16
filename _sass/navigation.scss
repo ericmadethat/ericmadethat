@@ -1,15 +1,24 @@
+
 .nav-open nav {
 	border-bottom: 1px dotted rgba(255, 255, 255, .2);
 	padding: 10px 0;
-	a {
-		display: block;
+	.nav-items a {
 		padding: 30px 0;
+		display: block;
+		&:hover {
+			color: $blue;
+			background: transparent;
+		}
+		@media #{$mid-point} {
+			position: relative;
+			display: inline;
+			padding: 4px 10px;
+		}
 	}
 
 	@media #{$mid-point} {
 		border: 0;
 		padding: 0 20px;
-
 		a {
 			display: inline;
 		}
@@ -24,9 +33,24 @@ nav {
 	top: -7px;
 	text-shadow: none;
 
+	.nav-items {
+		position: relative;
+		display: inline;
+		a {
+			&:hover {
+				color: white;
+				background-color: #3e97ff;
+				border-radius: 5px; }
+			&:active {
+				top: 2px;
+			}			
+		}
+	}
+
 	@media #{$mid-point} {
 		padding: 0 20px;
-		display: inline;
+		display: inline-block;
+		text-align: right;
 	}
 
 
@@ -37,13 +61,7 @@ nav {
 		display: none;
 		font-weight: 600;
 		position: relative;
-		&:hover {
-			color: white;
-			background-color: #3e97ff;
-			border-radius: 5px; }
-		&:active {
-			top: 2px;
-		}
+
 
 		@media #{$mid-point} {
 			display: inline;
