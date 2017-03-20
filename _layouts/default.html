@@ -11,6 +11,12 @@
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
+		
+		{% if page.custom_css %}
+  		{% for stylesheet in page.custom_css %}
+  			<link rel="stylesheet" href="/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  		{% endfor %}
+		{% endif %}
 
 		{% seo %}
 		{% feed_meta %}
@@ -68,6 +74,7 @@
 				<p class="copyright">
 					All rights reserved. Eric Nguyen 2017
 				</p>
+
 			</div>
 		</footer>
 
@@ -75,6 +82,11 @@
 		<script src="{{ site.baseurl }}/js/rellax.min.js"></script>
 		<script src="{{ site.baseurl }}/js/velocity.min.js"></script>
 		<script src="{{ site.baseurl }}/js/main.js"></script>
+		{% if page.custom_js %}
+			{% for custom_js in page.custom_js %}
+				<script src="{{ site.baseurl }}/js/{{ custom_js }}.js"</script>
+			{% endfor %}
+		{% endif %}
 		<script>
 			var rellax = new Rellax('.rellax')
 		</script>
