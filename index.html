@@ -10,11 +10,15 @@ custom_css : index
 <section class="hero">
 	<div class="inner-hero text-container">
 		<div class="hero-text-container">
-			<img class="hero-logo" data-tilt src="images/logo/ericmadethat_logo.png" alt="Eric Made That"></img>
+			
+			<div class="hero-logo-wrap" data-tilt>
+				<img class="hero-logo-frame" src="images/logo/ericmadethat_logo_frame.png" alt="Eric Made That"></img>
+				<img class="hero-logo-inner" src="images/logo/ericmadethat_logo_inner.png" alt="Eric Made That"></img>
+			</div>
+			
 			<p class="subtext">Hi, I’m Eric Nguyen.</br>And I really love making things.</p>
 		</div>
 	</div>
-	<div class="learn-more"><a href="#contact">Contact <span class="arrow">&#x25BC;</span></a></div>
 </section>
 
 <div class="content">
@@ -52,9 +56,13 @@ custom_css : index
 		</div>
 	</section>
 
+
+
+
 	<!-- Contact Form -->
 	<section class="pad" id="contact">
 		<div class="text-container contact-box">
+			<h2>Contact</h2>
 			<form action="https://formspree.io/eric@ericmadethat.com" method="post" class="contact-form">
 				<input type="text" name="_gotcha" style="display: none;">
 

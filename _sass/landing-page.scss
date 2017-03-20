@@ -25,10 +25,23 @@
 			margin-top: 40px;
 		}
 
-		.hero-logo {
+		.hero-logo-wrap {
 			width: 13rem;
 			margin: 0 auto;
 			display: block;
+			position: relative;
+			transform-style: preserve-3d;
+			-webkit-transform-style: preserve-3d;
+			.hero-logo-frame {
+				position: relative;
+			}
+			.hero-logo-inner {
+				position: absolute;
+				transform: translateZ(20px);
+				-webkit-transform-style: translateZ(20px);
+				top: 0;
+				left: 0;
+			}
 		}
 	}
 
