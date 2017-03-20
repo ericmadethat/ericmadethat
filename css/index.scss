@@ -1,2 +1,30 @@
 ---
 ---
+.brackets-el::before {
+  content: "</>";
+}
+.brackets-el {
+  position: absolute;
+}
+
+
+.ampersand-el::before {
+  content: "&";
+}
+.ampersand-el {
+  position: absolute;
+}
+
+.hexagon {
+  position: absolute;
+  &.el-1 {
+    bottom: 0;
+    left: -4%;
+    opacity: 0.8;
+  }
+  &.el-2 {
+    opacity: 0.4;
+    bottom: 13%;
+    left: 3%;
+  }
+}
