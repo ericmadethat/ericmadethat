@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="581px" height="593px" viewBox="0 0 581 593" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>music_note_line</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="music_note_line" stroke="#4990E2" stroke-width="37">
+            <circle id="Oval-2" cx="132" cy="487" r="72"></circle>
+            <circle id="Oval-2-Copy" cx="417.273438" cy="421" r="72"></circle>
+            <polyline id="Path-3" points="202.054688 470.847656 202.054688 148.556469 488.273438 45.5 488.273438 408.203125"></polyline>
+            <path d="M201.5,221.380795 L489.195313,122.066057" id="Path-4"></path>
+        </g>
+    </g>
+</svg>
