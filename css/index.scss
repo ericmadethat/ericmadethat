@@ -1,18 +1,55 @@
 ---
 ---
-.brackets-el::before {
-  content: "</>";
+@import "variables";
+@import "colors";
+
+.section-break {
+  text-align: center;
+  opacity: 0.2;
+  position: relative;
+  letter-spacing: 0.8;
+  h1 {
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    font-size: 4em;
+    left: 15%;
+    @media #{$desktop} {
+      font-size: 7rem;
+      left: 30%;
+    }
+  }
 }
 .brackets-el {
   position: absolute;
-}
-
-
-.ampersand-el::before {
-  content: "&";
-}
-.ampersand-el {
-  position: absolute;
+  width: 33px;
+  opacity: 0.2;
+  &.el-1 {
+    top: 40%;
+    right: 3%;
+    opacity: 0;
+    @media #{$desktop} {
+      opacity: 0.2;
+      top: 25%;
+      right: 11%;
+    }
+  }
+  &.el-2 {
+    top: 8%;
+    left: 50%;
+    @media #{$desktop} {
+      top: 19%;
+      left: 10%;
+    }
+  }
+  &.el-3 {
+    top: 60%;
+    left: 5%;
+    @media #{$desktop} {
+      top: 60%;
+      left: 3%;
+    }
+  }
 }
 
 .hexagon {
@@ -21,10 +58,32 @@
     bottom: 0;
     left: -4%;
     opacity: 0.8;
+    width: 120px;
+    @media #{$desktop} {
+      width: auto;
+    }
   }
   &.el-2 {
     opacity: 0.4;
-    bottom: 13%;
-    left: 3%;
+    width: 120px;
+    bottom: 10%;
+    left: 11%;
+    @media #{$desktop} {
+      width: auto;
+      bottom: 13%;
+      left: 3%;
+    }
+  }
+}
+.half-circle {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 0;
+    @media #{$desktop} {
+    width: auto;
+    top: 10%;
+    right: 0;
+    opacity: 0.9;
   }
 }
