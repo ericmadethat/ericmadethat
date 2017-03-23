@@ -90,7 +90,23 @@ section {
 	}
 	&#developer {
 		h2 { color: $blue; }
+		.image-coding-tilt {
+			position: relative;
+			transform-style: preserve-3d;
+			.terminal-frame {
+				position: relative;
 
+			}
+			.terminal {
+				position: absolute;
+				top: 0;
+				left: 0%;
+				transform: translateZ(30px);
+				@media #{$desktop} {
+					left: 20%;
+				}
+			}
+		}
 	}
 	&#blog {
 		h2 { color: $turquoise; }

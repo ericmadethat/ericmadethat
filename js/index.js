@@ -12,3 +12,8 @@ heroLogo.tilt({
   glare: true,
   maxGlare: 0.9
 });
+
+$('.image-coding-tilt').tilt({
+  axis: 'x',
+  maxTilt: 15
+})
