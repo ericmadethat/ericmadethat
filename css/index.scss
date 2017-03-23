@@ -107,6 +107,41 @@
       bottom: 26%;
     }
   }
+  &.music-1 {
+    opacity: 0.2;
+    bottom: 45%;
+    left: 70%;
+    width: 45px;
+    @media #{$desktop} {
+      bottom: 36%;
+      width: 45px;
+      opacity: 0.4;
+    }
+  }
+  &.music-2 {
+    opacity: 0.2;
+    bottom: 39%;
+    width: 30px;
+    right: 5%;
+    @media #{$desktop} {
+      bottom: 45%;
+      width: 30px;
+      opacity: 0.6;
+      right: 20%;
+    }
+  }
+  &.music-3 {
+    opacity: 0.6;
+    bottom: 37%;
+    width: 20px;
+    right: 20%;
+    @media #{$desktop} {
+      bottom: 25%;
+      width: 20px;
+      opacity: 0.6;
+      right: 30%;
+    }
+  }
 }
 // AMPERSANDS
 .ampersand-el {
@@ -173,6 +208,17 @@
       left: 20%;
       opacity: 0.8;
       width: 25px;
+    }
+  }
+  &.dc-5 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      position: absolute;
+      top: 23%;
+      left: 24%;
+      opacity: 0.8;
+      width: 18px;
     }
   }
   &.dc-2 {
@@ -270,6 +316,25 @@
       right: 4%;
       opacity: 0.3;
       width: 5%;
+    }
+  }
+  &.dc-3 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      bottom: -90%;
+      left: 1%;
+      opacity: 0.1;
+      width: 15%;
+    }
+  }
+  &.music-1 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      top: -400px;
+      right: -200px;
+      width: 400px;
     }
   }
 }
