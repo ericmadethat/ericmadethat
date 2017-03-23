@@ -53,11 +53,25 @@
     }
   }
   &.el-4 {
+    opacity: 0.2;
+    bottom: -43%;
+    right: 18%;
+    width: 200px;
     @media #{$desktop} {
       bottom: -43%;
       right: 18%;
       opacity: 0.2;
       width: 280px;
+    }
+  }
+  &.dc-1 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      position: absolute;
+      bottom: 0;
+      left: 3%;
+      width: 300px;
     }
   }
 }
@@ -118,7 +132,7 @@
   }
   &.el-3 {
     @media #{$desktop} {
-      top: 14%;
+      top: 12%;
       right: 10%;
       opacity: 0.9;
     }
@@ -139,6 +153,50 @@
       width: 13px;
     }
   }
+  &.dc-1 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      position: absolute;
+      top: 5%;
+      left: 20%;
+      opacity: 0.6;
+      width: 30px;
+    }
+  }
+  &.dc-4 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      position: absolute;
+      top: 17%;
+      left: 20%;
+      opacity: 0.8;
+      width: 25px;
+    }
+  }
+  &.dc-2 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      position: absolute;
+      top: 60%;
+      left: 5%;
+      opacity: 0.7;
+      width: 22px;
+    }
+  }
+  &.dc-3 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      position: absolute;
+      top: 75%;
+      left: 2%;
+      opacity: 0.6;
+      width: 15px;
+    }
+  }
 }
 // HEXAGONS
 .hexagon {
@@ -147,20 +205,71 @@
     bottom: 0;
     left: -4%;
     opacity: 0.8;
-    width: 120px;
+    width: 130px;
     @media #{$desktop} {
       width: auto;
     }
   }
   &.el-2 {
     opacity: 0.4;
-    width: 120px;
+    width: 130px;
     bottom: 10%;
     left: 11%;
     @media #{$desktop} {
       width: auto;
       bottom: 13%;
       left: 1%;
+    }
+  }
+  &.el-3 {
+    opacity: 0.5;
+    width: 20px;
+    bottom: 8%;
+    right: 32%;
+    @media #{$desktop} {
+      width: 29px;
+      bottom: 8%;
+      right: 32%;
+    }
+  }
+  &.el-4 {
+    opacity: 0.4;
+    width: 10px;
+    top: 15%;
+    right: 12%;
+    @media #{$desktop} {
+      width: 12px;
+      top: 15%;
+      right: 25%;
+    }
+  }
+  &.el-5 {
+    opacity: 0;
+    @media #{$desktop} {
+      width: 5%;
+      top: 28%;
+      left: 25%;
+      opacity: 0.3;
+    }
+  }
+  &.dc-1 {
+    display: none;
+    width: 80px;
+    @media #{$desktop} {
+      display: inline;
+      top: 65%;
+      left: 15%;
+      opacity: 0.3;
+    }
+  }
+  &.dc-2 {
+    display: none;
+    @media #{$desktop} {
+      display: inline;
+      bottom: -30%;
+      right: 4%;
+      opacity: 0.3;
+      width: 5%;
     }
   }
 }
@@ -170,7 +279,7 @@
   right: 0;
   width: 0;
     @media #{$desktop} {
-    width: auto;
+    width: 15%;
     top: 10%;
     right: 0;
     opacity: 0.9;

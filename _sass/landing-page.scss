@@ -90,12 +90,22 @@ section {
 	}
 	&#developer {
 		h2 { color: $blue; }
+
 	}
 	&#blog {
 		h2 { color: $turquoise; }
 	}
 	&#music {
 		h2 { color: $red; }
+	}
+}
+.triangle-section {
+	opacity: 0;
+	position: absolute;
+	@media #{$desktop} {
+		top: 40%;
+		left: 0;
+		opacity: 1;
 	}
 }
 
