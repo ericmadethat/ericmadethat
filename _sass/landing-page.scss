@@ -76,7 +76,7 @@
 		}
 	}
 
-	.content section:nth-child(even) .flex {
+	.content section:nth-child(even):not(.no-reverse) .flex {
 		flex-direction: row-reverse;
 	}
 }
@@ -113,6 +113,36 @@ section {
 	}
 	&#music {
 		h2 { color: $blue; }
+	}
+	&#contact {
+		background-color: white;
+		border-top: 16px solid transparent;
+		border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em,
+	              #58a 0, #58a 3em, transparent 0, transparent 4em);
+		color: $blue;
+		padding: 45px;
+		input:not([type=submit]), textarea {
+			background-color: #f3faff;
+			border: none;
+			color: black;
+			border-bottom: 1px solid white;
+			&:focus {
+				box-shadow: none;
+				border: none;
+				border-bottom: 1px solid $blue;
+				background-color: #e7f5ff;
+			}
+		}
+		input[type=submit] {
+			background-color: $blue;
+			color: white;
+			border: none;
+			transition: none;
+			&:hover {
+				background-color: #7ED321;
+				border: none;
+			}
+		}
 	}
 }
 .triangle-section {
