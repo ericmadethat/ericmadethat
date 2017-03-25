@@ -8,8 +8,13 @@ html, body {
 	padding: 0;
 }
 
+@font-face {
+  font-family: 'Avenir Light';
+  src: url(../fonts/avenir-light.otf);
+}
+
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Avenir Light', sans-serif;
 	font-weight: 400;
 	color: $light-grey;
 }
@@ -32,13 +37,13 @@ h1 strong, h2 strong {
 }
 
 h1 {
-	font-weight: 300;
+	font-weight: light;
 	font-size: 3.8em;
 	margin: 0;
 }
 
 h2 {
-	font-weight: 300;
+	font-weight: lighter;
 	font-size: 3em;
 	margin: 0 0 30px 0;
 	line-height: 1.2em;
@@ -57,7 +62,7 @@ h2 a {
 }
 
 h1, h2, h3, h4 {
-	font-family: 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
+	font-family: 'Avenir Light', 'Helvetica', 'Helvetica Neue', 'Arial', sans-serif;
 }
 
 p, address, ul {

@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Avenir Light';
+  src: url(../fonts/avenir-light.otf);
+}
+
 .hero {
 	color: #ffffff;
 	text-align: center;
@@ -9,7 +14,7 @@
 		display: flex;
 		align-items: center;
 		height: 100%;
-		color: #C3C3C3;
+		color: #878788;
 	}
 
 	.hero-text-container {
@@ -19,14 +24,15 @@
 		position: relative;
 		top: -3rem;
 		.subtext {
-			font-family: 'Helvetica', 'Arial', sans-serif;
-			font-weight: bold;
+			font-family: 'Avenir Light', 'Helvetica', 'Arial', sans-serif;
+			font-weight: lighter;
 			font-size: 31px;
 			line-height: 1.2em;
 			margin-top: 40px;
 		}
 
 		.hero-logo-wrap {
+			visibility: hidden;
 			width: 13rem;
 			margin: 0 auto;
 			display: block;
@@ -83,8 +89,8 @@
 
 section {
 	h2 {
-		font-family: 'Helvetica', 'Arial', sans-serif;
-		font-weight: 600;
+		font-family: 'Avenir Light', 'Helvetica', 'Arial', sans-serif;
+		font-weight: lighter;
 		margin-bottom: 15px;
 		line-height: 1;
 	}

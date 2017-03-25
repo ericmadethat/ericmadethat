@@ -1,17 +1,27 @@
 ---
 title: About Me
 description: About Eric Nguyen
+custom_css : about
 ---
 
-<section class="hero">
-	<div class="inner-hero text-container">
-		<div class="hero-text-container">
-			<div style="display: block; width: 230px; margin: 0 auto;	">
-				<img src="/images/profile.jpg"></img>
-			</div>
-			</br>
-			<h1>About Me</h1>
-			<p>I'm a creative crafter that loves making beautiful things.</p>
-		</div>
+<div id="about-section">
+	<div style="width: 230px;" class="about-image">
+		<img src="/images/profile.jpg"></img>
 	</div>
-</section>
+	<div class="about-text">
+		</br>
+		<h1>Who's this guy?</h1>
+		<p>I'm Eric Nguyen, a web developer, designer, and musician.</p>
+		<p>I once took a brain test that determined <span style="font-style: italic;">both</span> my left and right brains were equally dominant. This means I enjoy creative expression just as much as analytical thinking. Pretty handy problem solving!</p>
+
+		<p>I originally graduated with a degree in Architecture, but it wasn't really my cup of tea. So I learned graphic design and coding. I worked as a lead designer and developer for a number of companies. I'll let you read the details on <a href="https://www.linkedin.com/in/ericn4/" target="_blank">LinkedIn</a>.</p>
+
+		<p>In 2017, I quit my job to take a gap year and pursue dream projects, travel, and learn new skills. I'm currently in Montreal. If you'd like to reach me, feel free to <a href="mailto:eric@ericmadethat.com">drop me a line</a>! I love hearing about new projects.</p>
+		{% for link in site.data.footer.right_links %}
+				<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
+					{% if link.social_icon %}{% include social-icon.html icon=link.social_icon %}{% endif %}
+					Twitter
+				</a>
+		{% endfor %}
+	</div>
+</div>
