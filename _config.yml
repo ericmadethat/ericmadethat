@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Main contact page for Eric Nguyen
+description: Main contact page for Eric Nguyen. Web developer, designer, and musician.
 author:
   name:
   email:
@@ -65,7 +65,6 @@ defaults:
       layout: "page"
 
 # -----------
-# CloudCannon
 
 social_icons:
   - Facebook

@@ -1,7 +1,18 @@
 ---
-title: 404 Not Found
-description: Lost? This page doesn't exist!
+title: Page Not Found
+description: The page you're looking for doesn't exist
 permalink: /404.html
 layout: page
 error_image: yes
 ---
+
+<section class="hero" style="background-image: url({% include relative-src.html src=page.image %})">
+  <div class="inner-hero text-container">
+    <div class="hero-text-container">
+      <h1>{{ page.title }}</h1>
+      <p class="subtext">{{ page.description }}</p>
+      <img src="https://media.giphy.com/media/EsklbeniXcPTi/giphy.gif"></img>
+      <p>Let's take you <a href='/'>home</a></p>
+    </div>
+  </div>
+</section>

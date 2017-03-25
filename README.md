@@ -1,3 +1,3 @@
 # EricMadeThat
 
-Homepage
+Main contact page
