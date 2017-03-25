@@ -30,12 +30,13 @@ nav {
 	font-size: .8em;
 	width: 100%;
 	position: relative;
-	top: -7px;
+	top: 0;
 	text-shadow: none;
 
 	.nav-items {
 		position: relative;
 		display: inline;
+		top: -10px;
 		a {
 			&:hover:not(.nav-logo) {
 				color: white;
@@ -74,7 +75,7 @@ nav {
 			display: inline;
 			position: absolute;
 			right: 10px;
-			top: -7px;
+			top: -10px;
 			font-size: 1.9em;
 			border: 0;
 			text-shadow: 0;
